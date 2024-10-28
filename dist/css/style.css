@@ -610,7 +610,7 @@ main {
   -webkit-appearance: none;
   width: 15px;
   height: 15px;
-  background-color: #D5D4D8;
+  background-color: rgb(66, 169, 237);
   border: none;
   border-radius: 50%;
 }
