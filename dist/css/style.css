@@ -248,6 +248,37 @@ main {
   color: rgb(42, 43, 48);
 }
 
+.btn--effect {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn--effect:hover {
+  -webkit-transform: none;
+      -ms-transform: none;
+          transform: none;
+}
+
+.btn--effect::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 200%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(29%, transparent), color-stop(29%, rgba(255, 255, 255, 0.8)), color-stop(32%, transparent), color-stop(35%, rgba(255, 255, 255, 0.8)), color-stop(42%, transparent), color-stop(45%, rgba(255, 255, 255, 0.7)), color-stop(55%, transparent), color-stop(58%, rgba(255, 255, 255, 0.8)), color-stop(61%, transparent));
+  background: linear-gradient(to right top, transparent 29%, rgba(255, 255, 255, 0.8) 29% 32%, transparent 32% 35%, rgba(255, 255, 255, 0.8) 35% 40%, transparent 42% 45%, rgba(255, 255, 255, 0.7) 45% 55%, transparent 55% 58%, rgba(255, 255, 255, 0.8) 58% 61%, transparent 61%);
+  opacity: 0.3;
+  left: 0;
+  top: 0;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  z-index: 3;
+  -webkit-animation: toRight 6s infinite;
+          animation: toRight 6s infinite;
+}
+
 .section-title {
   font-family: Montserrat, serif;
   font-size: 102px;
@@ -351,7 +382,7 @@ main {
 .promo {
   padding-top: 203px;
   min-height: 850px;
-  background: url("../img/promo/promo-bg.jpg") center no-repeat;
+  background: url("../img/promo/promo-bg.webp") center no-repeat;
 }
 
 .promo__title {
@@ -419,7 +450,7 @@ main {
 .registration {
   padding-top: 121px;
   padding-bottom: 151px;
-  background: #272733 url("../img/registration/registration-bg.png") no-repeat;
+  background: #272733 url("../img/registration/registration-bg.webp") no-repeat;
 }
 
 .registration .container {
@@ -1310,6 +1341,7 @@ main {
 
   .registration {
     padding: 45px 0;
+    background-position: center;
   }
 
   .registration__title {
