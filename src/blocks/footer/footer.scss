@@ -1,0 +1,44 @@
+@import "../../scss/colors.scss";
+
+.footer {
+    padding: 30px 0;
+    background: rgba(61, 64, 80, 1);
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__copy,
+    &__payment-text,
+    &__links-text {
+        font-family: Lato, serif;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 110%;
+        color: rgba(255, 255, 255, 1);
+    }
+    &__payment-text {
+        color: rgba(195, 195, 195, 1);
+    }
+    &__payment-text,
+    &__links-text {
+        padding-top: 5px;
+    }
+    &__line {
+        background: rgba(195, 195, 195, 1);
+        width: 1px;
+        height: 18px;
+    }
+    &__payment,
+    &__links {
+        display: flex;
+        align-items: center;
+        gap: 38px;
+    }
+    &__payment-item,
+    &__links-link {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+}

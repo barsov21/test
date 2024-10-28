@@ -1,0 +1,87 @@
+@media screen and (max-width: 1199px) {
+    .container {
+        max-width: 988px;
+    }
+    .input {
+        font-size: 16px;
+    }
+    .header {
+        .container {
+            max-width: 100%;
+            padding-left: 14px;
+            padding-right: 14px;
+        }
+    }
+    .promo {
+        padding-top: 165px;
+        min-height: 695px;
+        background-position: 53%;
+        &__title {
+            font-size: 40px;
+            margin-bottom: 55px;
+        }
+        &__list {
+            margin-bottom: 55px;
+        }
+    }
+    .registration {
+        padding-top: 85px;
+        padding-bottom: 110px;
+        &__descr,
+        &__items {
+            margin-bottom: 55px;
+        }
+        &__title {
+            font-size: 32px;
+        }
+        &__items {
+            gap: 9px;
+        }
+        &__item {
+            width: 182px;
+            &::before {
+                width: 80px;
+                right: -44px;
+                background-size: contain;
+            }
+        }
+        &__item-text {
+            font-size: 14px;
+        }
+        &__form-inner {
+            gap: 22px;
+        }
+        &__form-input,
+        &__form-dropdown,
+        &__form-button,
+        &__file,
+        &__form-menu {
+            max-width: 300px;
+        }
+        &__form-block {
+            max-width: 625px;
+        }
+        &__file-button {
+            font-size: 13px;
+        }
+        &__form-descr,
+        &__form-output {
+            font-size: 16px;
+        }
+        &__form-li {
+            font-size: 16px;
+            line-height: 32px;
+        }
+    }
+    .footer {
+        &__links,
+        &__payment {
+            gap: 20px;
+        }
+        &__links-text,
+        &__payment-text {
+            padding-top: 2px;
+            font-size: 12px;
+        }
+    }
+}

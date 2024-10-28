@@ -1,0 +1,35 @@
+@media screen and (max-width: 1400px) {
+    .header {
+        padding: 25px 0;
+    }
+    .container {
+        max-width: 1168px;
+    }
+    .promo {
+        min-height: 780px;
+        &__title, 
+        &__list {
+            margin-bottom: 65px;
+        }
+    }
+    .registration {
+        padding-top: 100px;
+        padding-bottom: 130px;
+        &__descr {
+            margin-bottom: 65px;
+        }
+        &__items {
+            gap: 45px;
+            margin-bottom: 65px;
+        }
+        &__form-block {
+            max-width: 750px;
+        }
+        &__form-input,
+        &__form-dropdown,
+        &__form-button,
+        &__file {
+            max-width: 360px;
+        }
+    }
+}

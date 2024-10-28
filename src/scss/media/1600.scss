@@ -1,0 +1,20 @@
+@import "../scss/colors.scss";
+
+@media screen and (max-width: 1600px) {
+    .promo {
+        padding-top: 185px;
+        min-height: 825px;
+        &__title,
+        &__list {
+            margin-bottom: 70px;
+        }
+    }
+    .registration {
+        padding-top: 110px;
+        padding-bottom: 140px;
+        &__descr,
+        &__items  {
+            margin-bottom: 70px;
+        }
+    }
+}

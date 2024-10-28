@@ -1,0 +1,294 @@
+@import "../../scss/colors.scss";
+
+.registration {
+    padding-top: 121px;
+    padding-bottom: 151px;
+    background: #272733 url('../img/registration/registration-bg.png') no-repeat;
+    .container {
+        overflow: hidden;
+    }
+
+    &__title {
+        font-family: Lato, serif;
+        font-size: 36px;
+        font-weight: 800;
+        line-height: 120%;
+        color: #fff;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+
+        &--color {
+            color: #3E9CDC;
+        }
+    }
+
+    &__descr {
+        font-family: Lato, serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 120%;
+        margin-bottom: 80px;
+        color: #BBBBBB;
+        text-align: center;
+    }
+
+    &__items {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 50px;
+        margin-bottom: 80px;
+    }
+
+    &__item {
+        position: relative;
+        width: 189px;
+        text-align: center;
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 112px;
+            height: 6px;
+            top: 47px;
+            right: -80px;
+            background: url('../img/registration/item-line.png') no-repeat;
+        }
+        &:nth-child(5n),
+        &:last-of-type {
+            &::before {
+                background: none;
+            }
+        }
+    }
+
+    &__item-circle {
+        width: 100px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #3E9CDC;
+        border-radius: 50%;
+        border: 5px solid #286690;
+        margin: 0 auto 20px;
+    }
+
+    &__item-text {
+        font-family: Lato, serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 110%;
+        text-align: center;
+        color: #fff;
+        max-width: 100%;
+    }
+
+    &__form-inner {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin-bottom: 55px;
+    }
+
+    &__form-input {
+        width: 370px;
+        height: 48px;
+    }
+
+    &__form-button {
+        display: block;
+        margin: 0 auto;
+        max-width: 370px;
+        width: 100%;
+        height: 48px;
+        font-size: 15px;
+    }
+    &__form-output {
+        font-family: Lato, serif;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 110%;
+        color: rgba(#fff, .85);
+    }
+    &__form-block {
+        max-width: 770px;
+        width: 100%;
+    }
+    &__form-range {
+        -webkit-appearance: none;
+        background: rgba(255, 255, 255, 0.7);
+        width: 100%;
+        height: 6px;
+        border-radius: 50px;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        &::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 24px;
+            height: 24px;
+            background: rgba(66, 169, 237, 1);
+            border: 3px solid rgba(40, 102, 144, 1);
+            border-radius: 50%;
+        }
+        &::-moz-range-thumb {
+            -webkit-appearance: none;
+            width: 15px;
+            height: 15px;
+            background-color: #D5D4D8;
+            border: none;
+            border-radius: 50%;
+        }
+    }
+
+    &__file {
+        position: relative;
+        text-align: center;
+        max-width: 370px;
+        width: 100%;
+        height: 48px;
+        border-radius: 3px;
+    }
+
+    &__input-file {
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+    }
+
+    &__file-icon {
+        width: 17px;
+        height: 20px;
+    }
+
+    &__file-button {
+        width: 100%;
+        max-width: 370px;
+        height: 48px;
+        border: 2px solid rgba(62, 156, 220, 1);
+        background-color: #fff;
+        color: rgba(39, 39, 51, 1);
+        font-family: Lato, serif;
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 110%;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+
+    &__form-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 5px;
+    }
+
+    &__form-descr {
+        font-family: Lato, serif;
+        max-width: 325px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 120%;
+        color: #fff;
+    }
+
+    &__form-dropdown {
+        max-width: 370px;
+        height: 48px;
+        position: relative;
+
+        &--active {
+            .registration__form-arrow {
+                transform: translateY(-50%) rotate(180deg);
+            }
+
+            .registration__form-menu {
+                transition: 0.3s;
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+
+    &__form-arrow {
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        transition: 0.3s;
+        transform: translateY(-50%);
+    }
+
+    &__form-trigger {
+        cursor: pointer;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+        }
+    }
+
+
+    &__form-menu {
+        max-width: 370px;
+        width: 100%;
+        height: 179px;
+        background: rgba(61, 64, 80);
+        z-index: 100;
+        position: absolute;
+        left: 0;
+        top: calc(100% + 10px);
+        opacity: 0;
+        visibility: hidden;
+        
+    }
+
+    &__form-ul {
+        list-style-type: none;
+        width: 100%;
+        height: 100%;
+        overflow-y: scroll;
+        padding: 0 10px;
+        &::-webkit-scrollbar {
+            width: 8px;
+        }
+        &::-webkit-scrollbar-track {
+            background: rgba(61, 64, 80, 1);
+            background: -webkit-linear-gradient(to right, rgba(61, 64, 80, 1), rgba(61, 64, 80, 1));  
+            background: linear-gradient(to right, rgba(61, 64, 80, 1), rgba(61, 64, 80, 1)); 
+            border-radius: 10px;
+        }
+        &::-webkit-scrollbar-thumb {
+            background: rgba(62, 156, 220, 1);            
+            background: -webkit-linear-gradient(to right, rgba(62, 156, 220, 1), rgba(62, 156, 220, 1)); 
+            background: linear-gradient(to right, rgba(62, 156, 220, 1), rgba(62, 156, 220, 1)); 
+            border-radius: 10px;
+        }
+    }
+
+    &__form-li {
+        font-family: Lato, serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 34px;
+        color: #fff;
+        transition: .3s;
+        cursor: pointer;
+        &:hover {
+            color: rgba(66, 169, 237, 1);
+        }
+    }
+}

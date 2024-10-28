@@ -1,0 +1,65 @@
+@media screen and (max-width: 767px) {
+    .container {
+        max-width: 568px;
+    }
+    .header {
+        padding: 20px 0;
+        &__logo {
+            font-size: 20px;
+        }
+    }
+    .promo {
+        background-position: 0%;
+        min-height: 575px;
+        padding-top: 130px;
+        &__title {
+            font-size: 30px;
+            margin-bottom: 35px;
+        }
+        &__list {
+            margin-bottom: 50px;
+        }
+        &__descr,
+        &__list-item {
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+    .registration {
+        padding: 60px 0;
+        &__title {
+            font-size: 26px;
+            margin-bottom: 20px;
+        }
+        &__descr {
+            max-width: 420px;
+            margin: 0 auto 35px;
+        }
+        &__items {
+            margin-bottom: 35px;
+        }
+        &__item {
+            &:nth-child(3n) {
+                &::before {
+                    background: url('../img/registration/item-line.png') no-repeat;
+                }
+            }
+            &:nth-child(even),
+            &:last-of-type {
+                &::before {
+                    background: none;
+                }
+            }
+           
+        }
+        &__form-input,
+        &__form-dropdown,
+        &__form-button,
+        &__file,
+        &__form-menu,
+        &__form-block {
+            max-width: 370px;
+            width: 100%;
+        }
+    }
+}

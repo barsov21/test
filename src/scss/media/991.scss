@@ -1,0 +1,99 @@
+@media screen and (max-width: 991px) {
+    .container {
+        max-width: 778px;
+    }
+    .header {
+        &__nav {
+            display: none;
+        }
+        &__logo {
+            font-size: 24px;
+        }
+        &__burger {
+            display: flex;
+        }
+    }
+    .promo {
+        min-height: 650px;
+        background-position: 54%;
+        &__title {
+            max-width: 540px;
+            font-size: 32px;
+            margin-bottom: 45px;
+        }
+        &__list {
+            margin-bottom: 45px;
+        }
+        &__descr,
+        &__list-item {
+            font-size: 18px;
+            line-height: 22px;
+        }
+        &__buttons {
+            gap: 20px;
+        }
+    }
+    .registration {
+        padding: 75px 0;
+        &__title {
+            font-size: 28px;
+            margin-bottom: 25px;
+        }
+        &__descr,
+        &__items {
+            margin-bottom: 45px;
+        }
+        &__items {
+            gap: 20px 50px;
+        }
+        &__item {
+            &::before {
+                width: 112px;
+                right: -80px;
+            }
+            &:nth-child(5n) {
+                &::before {
+                    background: url('../img/registration/item-line.png') no-repeat;
+                }
+            }
+            &:nth-child(3n),
+            &:last-of-type {
+                &::before {
+                    background: none;
+                }
+            }
+        }
+        &__item-text {
+            font-size: 16px;
+        }
+        &__form-inner {
+            gap: 30px;
+            margin-bottom: 45px;
+        }
+        &__form-input,
+        &__form-dropdown,
+        &__form-button,
+        &__file,
+        &__form-menu {
+            max-width: 347px;
+        }
+    }
+    .footer {
+        padding: 25px 0;
+        &__inner {
+            flex-direction: column;
+        }
+        &__line {
+            display: none;
+        }
+        &__links-text,
+        &__payment-text {
+            font-size: 13px;
+            padding-top: 5px;
+        }
+        &__copy,
+        &__payment {
+            margin-bottom: 15px;
+        }
+    }
+}
